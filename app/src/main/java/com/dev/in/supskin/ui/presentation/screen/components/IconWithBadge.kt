@@ -3,7 +3,6 @@ package com.dev.`in`.supskin.ui.presentation.screen.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
@@ -27,7 +26,7 @@ import com.dev.`in`.supskin.R
 fun IconWithBadge(
     badge: Int, icon: Int
 ) {
-    Box{
+    Box {
         Icon(
             imageVector = ImageVector.vectorResource(icon),
             contentDescription = "Notification",
@@ -43,13 +42,13 @@ fun IconWithBadge(
                 modifier = Modifier
                     .offset(x = 1.dp, y = 2.dp)
                     .size(14.dp)
-                    .background(Color.Red, CircleShape)
+                    .background(Color(0xFFb7eb43), CircleShape)
                     .align(Alignment.BottomEnd),
                 contentAlignment = Alignment.Center
             ) {
                 Text(
                     text = badge.toString(),
-                    color = Color.White,
+                    color = Color.Black,
                     fontSize = 10.sp,
                     style = MaterialTheme.typography.labelSmall
                 )
@@ -57,10 +56,11 @@ fun IconWithBadge(
         }
     }
 }
+
 @Preview
 @Composable
 fun IconWithBadgePreview(modifier: Modifier = Modifier) {
-    Row(Modifier.padding(12.dp)){
+    Row(Modifier.padding(12.dp)) {
         IconWithBadge(badge = 0, R.drawable.search)
         IconWithBadge(badge = 3, R.drawable.favourite)
         IconWithBadge(badge = 3, R.drawable.cart)

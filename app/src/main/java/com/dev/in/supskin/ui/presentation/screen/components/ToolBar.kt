@@ -1,6 +1,5 @@
 package com.dev.`in`.supskin.ui.presentation.screen.components
 
-import android.widget.Toolbar
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -47,7 +46,7 @@ fun Toolbar(modifier: Modifier = Modifier) {
             style = TextStyle(
                 fontFamily = FontFamily.Serif,
                 fontWeight = FontWeight.Bold,
-                fontSize = 24.sp
+                fontSize = 32.sp
             ),
             color = Color(0xFFf3f3f3)
         )
