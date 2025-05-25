@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.dev.`in`.supskin.R
 import com.dev.`in`.supskin.ui.domain.model.BannerData
 import com.dev.`in`.supskin.ui.presentation.screen.components.BannerCarousel
+import com.dev.`in`.supskin.ui.presentation.screen.components.SecondaryHeader
 import com.dev.`in`.supskin.ui.presentation.screen.components.Toolbar
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -35,6 +36,13 @@ fun ShopScreen(modifier: Modifier = Modifier) {
             )
 
             BannerCarousel(banners = banners)
+        }
+
+        item {
+            SecondaryHeader(
+                leadingText = "Categories",
+                trailingText = "See All"
+            )
         }
     }
 }
