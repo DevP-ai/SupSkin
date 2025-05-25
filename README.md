@@ -16,7 +16,7 @@ Download Apk: https://drive.google.com/file/d/1LJE6Yv1NGeqRtwxAW2Nkh26KZhDZoq-b/
 # ✨Features
 
 🔝 Toolbar with Icon Badge
-   - Includes a top app bar with a cart or notification icon and a dynamic badge count.
+   - Includes a sticky top app bar with a search, favourite and cart icon and a badge count.
 
 🎞️ Slider Card (Carousel)
    - Horizontally scrollable card slider showcasing featured promotions or products.
