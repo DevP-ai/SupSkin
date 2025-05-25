@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.dev.`in`.supskin.R
 import com.dev.`in`.supskin.ui.domain.model.BannerData
 import com.dev.`in`.supskin.ui.presentation.screen.components.BannerCarousel
+import com.dev.`in`.supskin.ui.presentation.screen.components.CategoryList
 import com.dev.`in`.supskin.ui.presentation.screen.components.SecondaryHeader
 import com.dev.`in`.supskin.ui.presentation.screen.components.Toolbar
 
@@ -44,6 +45,23 @@ fun ShopScreen(modifier: Modifier = Modifier) {
                 trailingText = "See All"
             )
         }
+
+        item {
+            val categories = listOf(
+                Pair(R.drawable.category_img, "Cleaner"),
+                Pair(R.drawable.product_img, "Toner"),
+                Pair(R.drawable.product_img, "Toner"),
+                Pair(R.drawable.category_img, "Cleaner"),
+                Pair(R.drawable.product_img, "Toner"),
+                Pair(R.drawable.category_img, "Cleaner"),
+                Pair(R.drawable.product_img, "Toner"),
+                Pair(R.drawable.category_img, "Cleaner"),
+                Pair(R.drawable.product_img, "Toner"),
+            )
+
+            CategoryList(categories = categories)
+        }
+
     }
 }
 
